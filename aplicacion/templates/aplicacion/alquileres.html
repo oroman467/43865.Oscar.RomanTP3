@@ -1,0 +1,28 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<h1>Alquileres</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Detalle</th>
+            <th>Tipo</th>     
+            <th>Precio</th>  
+        </tr>
+    </thead>
+    <tbody>
+    {% for alquiler in alquileres %}
+    <tr>
+        <td>{{ alquiler.id }}</td>
+        <td>{{ alquiler.nombre }}</td>
+        <td>{{ alquiler.tipo }}</td>
+        <td>{{ alquiler.precio }}</td>
+    </tr>
+    </tr>
+    {% endfor %}
+    </tbody> 
+</table>
+{% endblock contenido %}

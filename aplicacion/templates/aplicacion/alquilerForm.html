@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuevoAlquiler</title>
+</head>
+<body>
+    <h2>Ingresar Nuevo Alquiler</h2>
+    <form action="" method="post">
+            {% csrf_token %}
+            <p>Nombre:<input type="text" name="nombre" id="nombre"></p>
+            <p>Tipo:<input type="number" name="tipo" id="tipo"></p>
+            <p>precio:<input type="number" name="tipo" id="precio"></p>
+            <input type="submit" value="Enviar">
+        </form>
+</body>
+</html>
